@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apps.cetin.info — Apps by Ahmet Çetin</title>
+    <meta name="description" content="Native apps and utilities built by Ahmet Çetin. Clipsmith — a macOS clipboard toolkit for developers — and more to come.">
+    <meta name="author" content="Ahmet Çetin">
+    <link rel="canonical" href="https://apps.cetin.info/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="apps.cetin.info — Apps by Ahmet Çetin">
+    <meta property="og:description" content="Native apps and utilities built by Ahmet Çetin.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://apps.cetin.info/">
+    <meta property="og:image" content="https://apps.cetin.info/assets/clipsmith/icon-512.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="/" class="nav__brand" aria-label="apps.cetin.info home">
+                <span class="nav__brand-mark">a.</span>
+                <span class="nav__brand-text"><strong>apps</strong><span class="nav__brand-text-light">.cetin.info</span></span>
+            </a>
+            <ul class="nav__links">
+                <li><a href="#apps" class="nav__link">Apps</a></li>
+                <li><a href="https://cetin.info" class="nav__link" target="_blank" rel="noopener">cetin.info</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__container">
+            <h1 class="hero__title reveal">
+                Apps by Ahmet Çetin<br>
+                <span class="hero__title-accent">Crafted with care.</span>
+            </h1>
+            <div class="hero__divider reveal reveal--delay-1"></div>
+            <p class="hero__subtitle reveal reveal--delay-1">
+                Small, focused tools for developers and curious people. Local-first. No accounts. No tracking.
+            </p>
+            <div class="hero__cta reveal reveal--delay-2">
+                <a href="#apps" class="btn btn--primary">Browse Apps</a>
+                <a href="https://cetin.info" target="_blank" rel="noopener" class="btn btn--outline">About the maker</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps Grid -->
+    <section class="section apps" id="apps">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__label">Apps</span>
+                <h2 class="section__title">What's available</h2>
+                <p class="section__subtitle">A growing collection of small utilities. Tap a card to learn more.</p>
+            </div>
+            <div class="apps__grid">
+                <a href="/clipsmith/" class="app-card reveal" aria-label="Clipsmith — macOS clipboard toolkit">
+                    <div class="app-card__head">
+                        <img src="assets/clipsmith/icon-256.png" alt="Clipsmith icon" class="app-card__icon" width="72" height="72">
+                        <div>
+                            <h3 class="app-card__name">Clipsmith</h3>
+                            <span class="app-card__platform">macOS</span>
+                        </div>
+                    </div>
+                    <p class="app-card__tagline">
+                        50+ clipboard transforms in one menu bar app: JSON, YAML, Base64, JWT, hashes, colors, slugs.
+                        On-device. Sandboxed. No network.
+                    </p>
+                    <span class="app-card__cta">View details →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">apps.cetin.info</div>
+                <div class="footer__links">
+                    <a href="#apps" class="footer__link">Apps</a>
+                    <a href="https://cetin.info" target="_blank" rel="noopener" class="footer__link">cetin.info</a>
+                    <a href="https://www.linkedin.com/in/cetin/" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+                </div>
+                <p class="footer__copyright">&copy; 2026 Ahmet Çetin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

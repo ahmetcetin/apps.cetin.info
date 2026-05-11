@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipsmith — Clipboard toolkit for developers</title>
+    <meta name="description" content="50+ clipboard transforms in one macOS menu bar app: JSON, YAML, Base64, JWT, hashes, colors, slugs. On-device. Sandboxed. No network.">
+    <meta name="keywords" content="clipboard, macOS, JSON, YAML, Base64, JWT, hash, developer tools, menu bar">
+    <meta name="author" content="Ahmet Çetin">
+    <link rel="canonical" href="https://apps.cetin.info/clipsmith/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Clipsmith — Clipboard toolkit for developers">
+    <meta property="og:description" content="50+ clipboard transforms in one macOS menu bar app. On-device. Sandboxed. No network.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://apps.cetin.info/clipsmith/">
+    <meta property="og:image" content="https://apps.cetin.info/assets/clipsmith/icon-1024.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg">
+    <link rel="shortcut icon" href="../favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="/" class="nav__brand" aria-label="apps.cetin.info home">
+                <span class="nav__brand-mark">a.</span>
+                <span class="nav__brand-text"><strong>apps</strong><span class="nav__brand-text-light">.cetin.info</span></span>
+            </a>
+            <ul class="nav__links">
+                <li><a href="/" class="nav__link">All apps</a></li>
+                <li><a href="https://cetin.info" class="nav__link" target="_blank" rel="noopener">cetin.info</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- App Hero -->
+    <section class="app-hero" id="hero">
+        <div class="app-hero__container">
+            <img src="../assets/clipsmith/icon-256.png" srcset="../assets/clipsmith/icon-256.png 1x, ../assets/clipsmith/icon-512.png 2x" alt="Clipsmith app icon" class="app-hero__icon reveal" width="144" height="144">
+            <h1 class="app-hero__title reveal">Clipsmith</h1>
+            <p class="app-hero__tagline reveal reveal--delay-1">JSON, YAML, Base64, hash tools</p>
+            <p class="app-hero__subtitle reveal reveal--delay-1">
+                50+ clipboard transforms in one menu bar app. Copy a JWT, a JSON blob, a base64 string, a color, a Unix epoch — press one hotkey, pick a transform, paste the result.
+            </p>
+            <div class="app-hero__cta reveal reveal--delay-2">
+                <a href="#" class="btn btn--primary btn--disabled" aria-disabled="true">Coming to the Mac App Store</a>
+                <a href="#features" class="btn btn--outline">See features</a>
+            </div>
+            <p class="app-hero__meta reveal reveal--delay-2">macOS · Sandboxed · No network · Free</p>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__label">Features</span>
+                <h2 class="section__title">Everything you copy, transformed</h2>
+                <p class="section__subtitle">Press ⌥⌘V. Clipsmith reads the clipboard, detects what it is, and shows only the relevant tools.</p>
+            </div>
+            <div class="features__grid">
+                <article class="feature reveal">
+                    <div class="feature__icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+                    </div>
+                    <h3 class="feature__title">Encode &amp; Decode</h3>
+                    <p class="feature__body">Base64, hex, URL components, HTML entities, JSON escape — both directions, instantly.</p>
+                </article>
+
+                <article class="feature reveal reveal--delay-1">
+                    <div class="feature__icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <h3 class="feature__title">Hashes</h3>
+                    <p class="feature__body">MD5, SHA-1, SHA-256, SHA-512 via CryptoKit. Lowercase hex, ready to paste.</p>
+                </article>
+
+                <article class="feature reveal reveal--delay-2">
+                    <div class="feature__icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+                    </div>
+                    <h3 class="feature__title">JSON / YAML / XML / CSV</h3>
+                    <p class="feature__body">Format, minify, infer TS types, generate Markdown tables, convert in any direction.</p>
+                </article>
+
+                <article class="feature reveal">
+                    <div class="feature__icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+                    </div>
+                    <h3 class="feature__title">JWT decoder</h3>
+                    <p class="feature__body">Paste a token, get a pretty-printed header, payload, and signature. Detected automatically.</p>
+                </article>
+
+                <article class="feature reveal reveal--delay-1">
+                    <div class="feature__icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                    </div>
+                    <h3 class="feature__title">Numbers &amp; timestamps</h3>
+                    <p class="feature__body">Decimal ↔ hex ↔ binary. Unix epoch ↔ ISO 8601. Auto-detected on copy.</p>
+                </article>
+
+                <article class="feature reveal reveal--delay-2">
+                    <div class="feature__icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/><circle cx="12" cy="14" r="1"/></svg>
+                    </div>
+                    <h3 class="feature__title">Colors</h3>
+                    <p class="feature__body">Hex ↔ RGB ↔ HSL. 3-, 6-, and 8-character hex with alpha supported.</p>
+                </article>
+
+                <article class="feature reveal">
+                    <div class="feature__icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M4 20L20 4"/></svg>
+                    </div>
+                    <h3 class="feature__title">Text &amp; lines</h3>
+                    <p class="feature__body">snake, kebab, camel, Pascal, CONSTANT, Title, Sentence. Sort, dedupe, trim, count.</p>
+                </article>
+
+                <article class="feature reveal reveal--delay-1">
+                    <div class="feature__icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 2c3 3 4 7 4 10s-1 7-4 10c-3-3-4-7-4-10s1-7 4-10z"/></svg>
+                    </div>
+                    <h3 class="feature__title">Web</h3>
+                    <p class="feature__body">Slugify (NFD-aware). Query string ↔ JSON. URL breakdown as Markdown table.</p>
+                </article>
+
+                <article class="feature reveal reveal--delay-2">
+                    <div class="feature__icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3 class="feature__title">Logs &amp; on-device AI</h3>
+                    <p class="feature__body">Strip ANSI, timestamps, k8s prefixes. Apple Foundation Models summarize — no data leaves your Mac.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy -->
+    <section class="section privacy" id="privacy">
+        <div class="privacy__container">
+            <span class="privacy__label reveal">Privacy</span>
+            <h2 class="privacy__title reveal">No network. No keystroke monitoring. On-device AI only.</h2>
+            <p style="color: rgba(255,255,255,0.7); font-size: var(--fs-lg); font-weight: var(--fw-light); max-width: 640px; margin: 0 auto;" class="reveal reveal--delay-1">
+                Clipsmith is built so it can't snoop on you, even if you wanted it to. Sandboxed by default; the entitlements simply aren't there.
+            </p>
+            <div class="privacy__list">
+                <div class="privacy__item reveal">
+                    <div class="privacy__item-title">No network entitlement</div>
+                    <p class="privacy__item-body">Nothing can be uploaded. Period.</p>
+                </div>
+                <div class="privacy__item reveal reveal--delay-1">
+                    <div class="privacy__item-title">No Accessibility permission</div>
+                    <p class="privacy__item-body">No keystroke monitoring. Ever.</p>
+                </div>
+                <div class="privacy__item reveal reveal--delay-2">
+                    <div class="privacy__item-title">On-device AI</div>
+                    <p class="privacy__item-body">Apple Foundation Models, fully local.</p>
+                </div>
+                <div class="privacy__item reveal">
+                    <div class="privacy__item-title">History opt-in</div>
+                    <p class="privacy__item-body">Off by default. Auto-redacts secrets.</p>
+                </div>
+                <div class="privacy__item reveal reveal--delay-1">
+                    <div class="privacy__item-title">Per-app exclusion</div>
+                    <p class="privacy__item-body">Exempt 1Password, Bitwarden, banks.</p>
+                </div>
+                <div class="privacy__item reveal reveal--delay-2">
+                    <div class="privacy__item-title">Open-source deps only</div>
+                    <p class="privacy__item-body">GRDB.swift and Yams — both offline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="section screenshots" id="screenshots">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__label">In action</span>
+                <h2 class="section__title">A look around</h2>
+                <p class="section__subtitle">The palette adapts to whatever you just copied — JSON, JWT, color, epoch, text.</p>
+            </div>
+            <div class="screenshots__grid">
+                <div class="screenshots__item reveal"><img src="../assets/clipsmith/screenshots/screenshot-1.png" alt="Palette with JSON copied, showing JSON / YAML / XML / CSV transforms" loading="lazy"></div>
+                <div class="screenshots__item reveal reveal--delay-1"><img src="../assets/clipsmith/screenshots/screenshot-2.png" alt="Palette with a JWT copied, JWT Decode highlighted" loading="lazy"></div>
+                <div class="screenshots__item reveal"><img src="../assets/clipsmith/screenshots/screenshot-3.png" alt="Palette with a hex color copied, Hex to RGB / HSL options" loading="lazy"></div>
+                <div class="screenshots__item reveal reveal--delay-1"><img src="../assets/clipsmith/screenshots/screenshot-4.png" alt="Palette with a Unix epoch copied, Epoch to ISO 8601" loading="lazy"></div>
+                <div class="screenshots__item reveal"><img src="../assets/clipsmith/screenshots/screenshot-5.png" alt="Palette with helloWorld copied, snake/kebab/camel/Pascal/CONSTANT case options" loading="lazy"></div>
+                <div class="screenshots__item reveal reveal--delay-1"><img src="../assets/clipsmith/screenshots/screenshot-6.png" alt="Settings — General — Operation mode (Chain vs Repeat)" loading="lazy"></div>
+                <div class="screenshots__item reveal"><img src="../assets/clipsmith/screenshots/screenshot-7.png" alt="Settings — Privacy — Excluded apps" loading="lazy"></div>
+                <div class="screenshots__item reveal reveal--delay-1"><img src="../assets/clipsmith/screenshots/screenshot-8.png" alt="Error log with AI-generated GitHub issue draft side-by-side" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System requirements -->
+    <section class="section sysreq" id="requirements">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__label">Requirements</span>
+                <h2 class="section__title">What you need</h2>
+            </div>
+            <div class="sysreq__box reveal">
+                <div>
+                    <span class="sysreq__item-label">Operating system</span>
+                    <span class="sysreq__item-value">macOS 26.0 or later</span>
+                </div>
+                <div>
+                    <span class="sysreq__item-label">Architecture</span>
+                    <span class="sysreq__item-value">Apple Silicon</span>
+                </div>
+                <div>
+                    <span class="sysreq__item-label">Price</span>
+                    <span class="sysreq__item-value">Free (Pro coming)</span>
+                </div>
+                <div>
+                    <span class="sysreq__item-label">Distribution</span>
+                    <span class="sysreq__item-value">Mac App Store</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">apps.cetin.info</div>
+                <div class="footer__links">
+                    <a href="/" class="footer__link">All apps</a>
+                    <a href="https://cetin.info" target="_blank" rel="noopener" class="footer__link">cetin.info</a>
+                    <a href="https://www.linkedin.com/in/cetin/" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+                </div>
+                <p class="footer__copyright">&copy; 2026 Ahmet Çetin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
